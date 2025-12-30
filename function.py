@@ -74,22 +74,69 @@
 # def find_min(arr):
 #     # Base case: if the list has only one element
 #     if len(arr) == 1:
-#         return arr[0]
+# #         return arr[0]
     
-#     # Recursive step: find the minimum of the rest of the list
-#     rest_min = find_min(arr[1:])
+# #     # Recursive step: find the minimum of the rest of the list
+# #     rest_min = find_min(arr[1:])
     
-#     # Return the smaller of the first element and the rest_min
-#     return arr[0] if arr[0] < rest_min else rest_min
+# #     # Return the smaller of the first element and the rest_min
+# #     return arr[0] if arr[0] < rest_min else rest_min
 
-# # Example usage:
-# numbers = [34, 12, 5, 89, 67]
-# print(f"The smallest number is: {find_min(numbers)}")
+# # # Example usage:
+# # numbers = [34, 12, 5, 89, 67]
+# # print(f"The smallest number is: {find_min(numbers)}")
 
     
-# def greet(a,b):
-#     print(f"hello {a} {b}")
-#     print("welcome to python class")
+# # def greet(a,b):
+# #     print(f"hello {a} {b}")
+# #     print("welcome to python class")
 
 
-# greet("sudip","shrestha") 
+# # greet("sudip","shrestha") 
+
+# # high order function 
+
+# # def logger(func):
+
+# #     def wrapper(*args,**kwargs):
+# #         print(*args,**kwargs)
+# #         rev=func(*args,**kwargs)
+# #         print(rev)
+# #         return rev
+# #     return wrapper
+        
+
+# # @logger
+# # def reverse(name):
+# #     return reverse[::-1]
+# # reverse("asmin")
+
+
+
+# def logger(func):
+
+#     def wrapper(*args,**kwargs):
+#         print (*args)
+#         rev=func(*args)
+#         print(rev)
+#         return rev
+#     return wrapper
+
+
+
+# @logger 
+# def rev(name):
+#     return name[::-1]
+
+# rev("sudip")
+
+
+def multiplier(factor):
+
+    def multiplier_by_factor(number):
+        return number * factor
+    return multiplier_by_factor
+
+multiplier_value=multiplier(5)
+result=multiplier(20)
+print(result)

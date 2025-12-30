@@ -165,7 +165,7 @@
 #  print("true")
 
 
-# bitwise operators
-a=67
-b=3
-print(~a)
+# # bitwise operators
+# a=67
+# b=3
+# print(~a)

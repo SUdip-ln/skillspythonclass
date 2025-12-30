@@ -6,13 +6,13 @@
 #         break
 
 # find smallest num using conditions and loops 
-numbers=(56,78,67,54,63,4,56,1,3,5,6)
-small=numbers[0]
+# numbers=(56,78,67,54,63,4,56,1,3,5,6)
+# small=numbers[0]
 
-for i in range(0, len (numbers)):
-    if numbers[i]< small:
-        small=numbers[i]
-        print(small)
+# for i in range(0, len (numbers)):
+#     if numbers[i]< small:
+#         small=numbers[i]
+#         print(small)
 
 
 
