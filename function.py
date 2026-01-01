@@ -113,22 +113,22 @@
 
 
 
-# def logger(func):
+def logger(func):
 
-#     def wrapper(*args,**kwargs):
-#         print (*args)
-#         rev=func(*args)
-#         print(rev)
-#         return rev
-#     return wrapper
+    def wrapper(*args,**kwargs):
+        print (*args)
+        rev=func(*args)
+        print(rev)
+        return rev
+    return wrapper
 
 
 
-# @logger 
-# def rev(name):
-#     return name[::-1]
+@logger 
+def rev(name):
+    return name[::-1]
 
-# rev("sudip")
+rev("sudip")
 
 
 def multiplier(factor):
